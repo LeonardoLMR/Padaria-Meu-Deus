@@ -1,5 +1,7 @@
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Padaria Meu Deus</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -40,27 +42,27 @@
             <h1>CADASTRE-SE!</h1>
         </div>
         <div class="division-third">
-            <form action="backend.php", method="post", class="form">
+            <form action="login.php", method="post", class="form", id="formlogin">
                 <br>
                 <h1>Cadastre-se:</h1> <br>
                 <label>Nome: </label> <br>
-                <input type="text" placeholder="Digite seu nome!"> <br> <br>
+                <input type="text" placeholder="Digite seu nome!" id="nome"> <br> <br>
                 <label>E-mail: </label> <br>
-                <input type="text" placeholder="Digite seu E-mail!"> <br> <br>
+                <input type="text" placeholder="Digite seu E-mail!" id="e-mail"> <br> <br>
                 <label>Senha: </label> <br>
-                <input type="text" placeholder="Digite sua senha! "> <br> <br>
+                <input type="password" placeholder="Digite sua senha! " id="senha"> <br> <br>
 
-                <input name="Sexo" type="radio">
+                <input name="Sexo" type="radio" id="masculino">
                 <label>Masculino </label>
-                <input name="Sexo" type="radio">
+                <input name="Sexo" type="radio" id="feminino">
                 <label>Feminino </label>
                 <br> <br>
                 <label>Endereço: </label>
-                <input type="text" placeholder="Digite seu Endereço!"> <br> <br>
+                <input type="text" placeholder="Digite seu Endereço!" id="endereco"> <br> <br>
                 <label>Data de Nascimento: </label>
-                <input type="date">
+                <input type="date" id="data">
                 <br>
-                <button>Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </body>

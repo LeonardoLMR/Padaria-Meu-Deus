@@ -1,3 +1,4 @@
+/*Remover margens do site*/
 html, body{
     height: 100%;
     width: 100%;
@@ -5,6 +6,9 @@ html, body{
     padding: 0px;
 }
 
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*Divisão Principal*/
 .division-main{
     width: 100%;
     height: 100%;
@@ -13,22 +17,24 @@ html, body{
     background-position: center;
 }
 
+/*Titulo Principal*/
 .main-title{
     position: relative;
     top: 35%;
 }
-
+/*(Importa uma fonte)*/
 @font-face {
     font-family: 'Arabella';
     src: url(fontes/arabella\ Demo.ttf) format('truetype');
 }
-
+/*(Titulo principal)*/
 .main-title-name{
     font-family: 'Arabella', sans-serif;
     font-size: 180px;
     color: azure;
     text-align: center;
 }
+/*(Subtitulo)*/
 .main-title-subname{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     top: 19%;
@@ -36,6 +42,7 @@ html, body{
     text-align: center;
 }
 
+/*Divisão com Titulo*/
 .division-title{
     width: 100%;
     height: 100px;
@@ -47,10 +54,14 @@ html, body{
     align-items: center;
     justify-content: center;
 }
+/*(Para remover as margens dos textos para não ficar uma margem branca em cima)*/
 .division-title h1{
     margin: 0px;
 }
 
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*Divisão Secundaria*/
 .division-second{
     width: 100%;
     height: 80%;
@@ -59,7 +70,7 @@ html, body{
     justify-content: center;
     align-items: center;
 }
-
+/*(Containers para a Divisão Secundaria)*/
 .container-second{
     width: 300px;
     height: 500px;
@@ -69,13 +80,13 @@ html, body{
     background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
     text-align: center;
 }
-
+/*(Imagens dos Containers Secundarios)*/
 .container-second-image{
     width: 220px;
     height: 170px;
     border-radius: 20px;
 }
-
+/*(Descrição dos Containers Secundarios)*/
 .container-second-desc{
     width: 80%;
     height: 130px;
@@ -85,6 +96,9 @@ html, body{
     margin-right: 30px;
 }
 
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*Divisão Terciaria*/
 .division-third{
     width: 100%;
     height: 100%;
@@ -96,7 +110,7 @@ html, body{
     justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+/*(forms para a Divisão Terciaria)*/
 .form{
     width: 20%;
     height: 70%;
@@ -105,10 +119,13 @@ html, body{
     padding: 25px;
     box-shadow: 6px 6px 6px;
 }
+/*(Para remover as margens dos forms para não ficar uma margem branca em cima)*/
 .form h1{
     margin: 0px;
 }
-.form input[type="text"]{
+/*Para todos os inputs do tipo "text" e "password" que estejam dentro de .form*/
+.form input[type="text"],
+.form input[type="password"]{
     width: 100%;
     height: 40px;
     border: solid 2px black;
@@ -116,6 +133,7 @@ html, body{
     margin-top: 6px;
     padding: 9px;
 }
+/*Para todos os Botões que estejam dentro de .form*/
 .form button{
     width: 100%;
     height: 40px;
@@ -124,6 +142,7 @@ html, body{
     position: relative;
     top: 17%;
 }
+/*Para todos os inputs do tipo "Date" que estejam dentro de .form*/
 .form input[type="Date"]{
     width: 62%;
     border: solid 2px black;
