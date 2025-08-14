@@ -31,3 +31,20 @@ MyFormReserva.addEventListener("submit", function(event){
 
     event.preventDefault();
 });
+
+FormCadastro = document.getElementById("formcadastro");
+
+FormCadastro.addEventListener("submit", function(event){
+
+    const formData = new FormData(FormCadastro);
+
+    fetch('cadastro.php', {
+    method: 'POST',
+    body: formData
+    })
+    .then(response => response.text())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+
+    event.preventDefault();
+});
